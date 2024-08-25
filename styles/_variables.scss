@@ -1,6 +1,6 @@
 :root {
     --font-family-accent: 'Oswald', sans-serif;
-    --font-size-title: 52px;
+    --font-size-title: clamp(42px, 2.7vw, 52px);
 
     --color-light: #dbdada;
     --color-alternate: #991e99;

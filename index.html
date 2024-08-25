@@ -18,17 +18,26 @@
                     d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm9.354 5.354-6 6a.5.5 0 0 1-.708-.708l6-6a.5.5 0 0 1 .708.708z" />
             </svg>
         </a>
-        <nav class="header__menu">
-            <ul class="header__menu__list">
+        <nav class="header__menu hidden">
+            <ul class="header__menu__list" onclick="CloseModal()">
                 <li class="header__menu__item"><a href="#title">About me</a></li>
                 <li class="header__menu__item"><a href="#skills">Skills</a></li>
                 <li class="header__menu__item"><a href="#portfolio">Portfolio</a></li>
                 <li class="header__menu__item"><a href="#work-experience">Work Experience</a></li>
             </ul>
         </nav>
-        <a href="#contacts" class="header__contacts">
+        <a href="#contacts" class="header__contacts hidden" onclick="CloseModal()">
             Contacts
         </a>
+        <div class="header__modal hidden"></div>
+        <div class="header__burger">
+            <button class="header__burger__menu" type="button">
+                <img src="./icons/menu.svg" alt="Menu" loading="lazy">
+            </button>
+            <button class="header__burger__close hidden" type="button" onclick="CloseModal()">
+                <img src="./icons/close-circle.svg" alt="Menu" loading="lazy">
+            </button>
+        </div>
     </header>
     <main class="content">
         <h1 class="visually-hidden">Khairullin Danis</h1>
