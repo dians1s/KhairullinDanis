@@ -156,7 +156,7 @@ a {
     &__image {
 
         &__svg {
-            width: clamp(360px, 37.5vw, 720px);
+            width: clamp(320px, 37.5vw, 720px);
             height: 100%;
             fill: var(--color-light);
 
@@ -313,7 +313,7 @@ a {
             }
 
             &__image {
-                width: 500px;
+                width: auto;
                 height: auto;
 
                 &__photo {
@@ -446,7 +446,7 @@ a {
 
 .copyright {
     text-align: end;
-    width: 100%;
+    width: auto;
     height: 50px;
     padding-inline: 20vw;
 }
@@ -592,12 +592,14 @@ a {
 }
 
 @media (max-width: 666px) {
+
     .skills {
         padding-bottom: 100px;
     }
 
     .work-experience {
-        padding: 50px 0;
+        padding-inline: 0;
+        padding-bottom: 50px;
 
         &__container__job__date {
             display: none;
@@ -607,7 +609,30 @@ a {
         }
     }
 
+    .portfolio {
+        padding-bottom: 50px;
+    }
+
     .copyright {
         padding-right: 30px;
+    }
+}
+
+@media (max-width: 512px) {
+    .content {
+        padding-inline: 30px;
+    }
+
+    .skills {
+
+        &__title {
+            width: 200px;
+            text-align: center;
+        }
+    }
+
+    .contacts {
+        text-align: center;
+        text-wrap: wrap;
     }
 }
