@@ -345,6 +345,10 @@ a {
                     font-size: 32px;
                     text-transform: uppercase;
                     margin-bottom: 35px;
+
+                    & a:hover {
+                        color: rgb(158, 189, 86);
+                    }
                 }
 
                 &__description {
